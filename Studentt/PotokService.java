@@ -1,14 +1,10 @@
 package Studentt;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
-public class PotokService {
+public class PotokService{
 
-    public void sortedPotok(){
-       List<Potok> studentGroupList = new ArrayList<>();
-       Collections.sort(studentGroupList, new StreamComarator());
+    public void sortedPotok(List<Potok> potoks){
+        Collections.sort(potoks, new StreamComarator());
     }
 }
